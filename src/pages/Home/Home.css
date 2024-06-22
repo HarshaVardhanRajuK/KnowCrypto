@@ -14,34 +14,34 @@
 
 .home form {
     width: 80%;
-    padding: 4px 8px;
-    background: white;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
-    border-radius: 5px;
 }
 
 form input {
     flex: 1;
+    font-size: 20px;
     outline: none;
     border: none;
     font-size: 1rem;
-    padding-left: 10px;
     font-weight: bold;
+
+    padding: 8px;
+    border-radius: 5px;
+    padding-left: 18px;
+    margin-right: 5px;
+    width: 80%;
 }
 
 form button {
-    padding: 6px 12px;
-    background: rgb(49, 68, 192);
+    padding: 11px 12px;
+    background: #071952;
     border: none;
     color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    position: relative;    
-    right: 0;
+    border-radius: 5px;
+    cursor: pointer; 
 }
 
 /* table {

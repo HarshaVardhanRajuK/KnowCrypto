@@ -72,6 +72,7 @@ const Home = () => {
             <p>24hr Change</p>
             <p className="market-cap">Market Cap</p>
           </div>
+            <center style={{color: "gray", marginTop:"8px", fontSize: "12px"}}>Click to get Chart info</center>
           {displayCoin.slice(0, 20).map((coin) => {
             return (
               <Link
