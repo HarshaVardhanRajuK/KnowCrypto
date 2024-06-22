@@ -5,7 +5,6 @@ import axios from "axios";
 export const CoinContext = createContext();
 
 const CoinContextProvider = (props) => {
-  let KEY = import.meta.env.VITE_API_KEY;
 
   const [coinData, setCoinData] = useState();
 
@@ -21,7 +20,7 @@ const CoinContextProvider = (props) => {
         {
           headers: {
             accept: "application/json",
-            "x-cg-demo-api-key": KEY,
+            "x-cg-demo-api-key": "CG-AGXJ8jQiW4FvsMW2qStsLejb",
           },
         }
       );
