@@ -1,0 +1,114 @@
+.home {
+    padding-inline: 20px;
+    padding-block: 0 100px;
+}
+
+.description {
+    max-width: 700px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.home form {
+    width: 80%;
+    padding: 4px 8px;
+    background: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+form input {
+    flex: 1;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+form button {
+    padding: 6px 12px;
+    background: rgb(49, 68, 192);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* table {
+    margin: auto;
+    text-align: center;
+    border: 1px solid white;
+}
+tr td:nth-child(1), tr th:nth-child(1){
+    border-right: 1px solid red;
+    padding-right: 8px;
+}
+tr {
+    border: 1px solid red !important;
+} */
+
+
+.data-table {
+    max-width: 800px;
+    margin: auto;
+    background: black;
+    border-radius: 15px;
+}
+.data-table .layout:last-child {
+    border-bottom: none;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid rgb(155, 152, 152);
+    text-align: center;
+}
+.layout img {
+    width: 30px;
+}
+.green {
+    color: lightgreen;
+
+}
+.red {
+    color: red;
+}
+
+input[list="coinnames"]::placeholder {
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+}
+
+@media (max-width: 768px){
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .home form {
+        width: 90%;
+    }
+
+    .description {
+        margin: 40px auto;
+        gap: 1.4rem;
+    }
+    
+    .layout {
+        grid-template-columns: 0.4fr 3fr 1.3fr 1fr;
+        font-size: 14px;
+    }
+    .market-cap {
+        display: none;
+    }
+}

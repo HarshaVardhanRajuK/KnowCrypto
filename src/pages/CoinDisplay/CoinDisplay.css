@@ -1,0 +1,37 @@
+.spinner {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+
+.coin-page {
+    text-align: center;
+    padding-top: 60px;
+}
+.coin-name p {
+    font-size: 2rem;
+}
+.coin-name img {
+    margin-bottom: 18px;
+    width: 150px;
+}
+
+.line-chart {
+    max-width: 700px;
+    margin: 55px auto;
+}
+.coin-info {
+    max-width: 600px;
+    margin: 60px auto;
+}
+.coin-info ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+.coin-info ul li:first-child {
+    font-weight: bold;
+}
