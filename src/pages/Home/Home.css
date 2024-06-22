@@ -40,6 +40,8 @@ form button {
     color: white;
     border-radius: 6px;
     cursor: pointer;
+    position: relative;    
+    right: 0;
 }
 
 /* table {
