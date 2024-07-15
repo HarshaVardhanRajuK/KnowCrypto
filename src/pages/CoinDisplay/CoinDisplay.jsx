@@ -63,7 +63,7 @@ const CoinDisplay = () => {
   }
 
   return (
-    <>
+    <>{console.log(history, coinSpecificData)}
       <div className="coin-page">
         <div className="coin-name">
           <img src={coinSpecificData.image.large} alt="" />

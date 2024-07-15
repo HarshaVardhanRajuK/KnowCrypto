@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { CoinContext } from "../../context/CoinContext";
 import { Link } from "react-router-dom";
+import { PacmanLoader } from "react-spinners";
 
 import "./Home.css";
 
@@ -10,10 +11,12 @@ const Home = () => {
   const [displayCoin, setDisplayCoin] = useState([]);
 
   const [input, setInput] = useState("");
+  const [loading, setloading] = useState(true)
 
   useEffect(() => {
     if (coinData) {
       setDisplayCoin(coinData);
+      setloading(false)
     }
   }, [coinData]);
 
@@ -72,6 +75,7 @@ const Home = () => {
             <p>24hr Change</p>
             <p className="market-cap">Market Cap</p>
           </div>
+          {loading && <center style={{minHeight: "200px", display: "grid", placeItems: "center"}}><PacmanLoader color="white"/></center>}
             <center style={{color: "gray", marginTop:"8px", fontSize: "12px"}}>Click to get Chart info</center>
           {displayCoin.slice(0, 20).map((coin) => {
             return (
